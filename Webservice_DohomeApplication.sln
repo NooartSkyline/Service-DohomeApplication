@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webservice_DohomeApplication", "Webservice_DohomeApplication\Webservice_DohomeApplication.csproj", "{8FDBC720-4288-4E99-928D-D0A60A1D3E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI_DohomeApplication", "WebAPI_DohomeApplication\WebAPI_DohomeApplication.csproj", "{00AA98E5-72B5-469B-AE5F-7044B4F6648B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FDBC720-4288-4E99-928D-D0A60A1D3E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDBC720-4288-4E99-928D-D0A60A1D3E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDBC720-4288-4E99-928D-D0A60A1D3E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDBC720-4288-4E99-928D-D0A60A1D3E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00AA98E5-72B5-469B-AE5F-7044B4F6648B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AA98E5-72B5-469B-AE5F-7044B4F6648B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AA98E5-72B5-469B-AE5F-7044B4F6648B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AA98E5-72B5-469B-AE5F-7044B4F6648B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03D015AE-138F-4EA4-B569-8FC39E7BDBF9}
+	EndGlobalSection
+EndGlobal

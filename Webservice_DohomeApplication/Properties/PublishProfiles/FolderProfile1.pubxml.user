@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\withawat.bun\Desktop</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/dev.lib.dll">
+      <publishTime>03/27/2018 10:45:27</publishTime>
+    </File>
+    <File Include="bin/MoreLinq.dll">
+      <publishTime>12/23/2016 17:22:10</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/24/2018 17:44:14</publishTime>
+    </File>
+    <File Include="bin/SourceCode.HostClientAPI.dll">
+      <publishTime>02/26/2015 04:59:22</publishTime>
+    </File>
+    <File Include="bin/SourceCode.SmartObjects.Client.dll">
+      <publishTime>05/18/2016 16:02:31</publishTime>
+    </File>
+    <File Include="bin/Webservice_DohomeApplication.dll">
+      <publishTime>09/21/2018 10:28:18</publishTime>
+    </File>
+    <File Include="bin/Webservice_DohomeApplication.pdb">
+      <publishTime>09/21/2018 10:28:18</publishTime>
+    </File>
+    <File Include="Connected Services/WebLogIn/Webservice_DohomeApplication.WebLogIn.ResChangePassword.datasource">
+      <publishTime>09/21/2018 10:05:48</publishTime>
+    </File>
+    <File Include="Connected Services/WebLogIn/Webservice_DohomeApplication.WebLogIn.ResLogin.datasource">
+      <publishTime>09/21/2018 10:05:48</publishTime>
+    </File>
+    <File Include="DBMASTER.dbml">
+      <publishTime>07/24/2018 16:11:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/21/2018 10:28:18</publishTime>
+    </File>
+    <File Include="WebService.asmx">
+      <publishTime>07/04/2018 17:10:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

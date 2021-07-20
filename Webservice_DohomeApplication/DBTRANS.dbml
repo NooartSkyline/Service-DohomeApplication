@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBTRANS" Class="DBTRANSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.0.106;Initial Catalog=DBTRANS;Persist Security Info=True;User ID=udd" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DBTRANSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBTrans_PRE_Print_Barcode" Member="TBTrans_PRE_Print_Barcodes">
+    <Type Name="TBTrans_PRE_Print_Barcode">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATEUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRINT_NUMBER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRINTUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_StorageBinSub" Member="TBTrans_PRE_Print_StorageBinSubs">
+    <Type Name="TBTrans_PRE_Print_StorageBinSub">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROWORDER_LOCATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WAREHOUSE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STORAGEBIN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MAXSTOCK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_BarcodeSub" Member="TBTrans_PRE_Print_BarcodeSubs">
+    <Type Name="TBTrans_PRE_Print_BarcodeSub">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="BARCODE_REQ" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QUANTITY_REQ" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNIT_REQ" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT_RATE_REQ" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="QUANTITY_TRAN" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNIT_TRAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CAUSE_REQUEST" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="GR_DOCNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GR_YEAR" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PRINTUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="APPROVEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVEUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="APPROVE_REMARK" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_Label" Member="TBTrans_PRE_Print_Labels">
+    <Type Name="TBTrans_PRE_Print_Label">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REQUEST_USER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LABEL_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CAUSE_OF_REQUEST" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_Label_Auto" Member="TBTrans_PRE_Print_Label_Autos">
+    <Type Name="TBTrans_PRE_Print_Label_Auto">
+      <Column Name="ROWID" Type="System.String" DbType="VarChar(36) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="PRODUCTTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SALESET" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BARCODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="UNITCODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="UNITNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UNITPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="OTH_UNITCODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="OTH_UNITNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OTH_UNITPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="START_PRINT_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BEGINDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BEGINTIME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ENDDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVEDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DOCTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LABELSIZE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOCATIONNORMAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOCATIONTOPSTOCK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRNTIME_STATUS" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="CERAMIC_REMARK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRDOCNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CERAMIC_SIZE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CANCEL_MAT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMMISSION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROMO_DOCNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROMO_TABLE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HOUSE_BAND" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STDPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_Label_Saleset" Member="TBTrans_PRE_Print_Label_Salesets">
+    <Type Name="TBTrans_PRE_Print_Label_Saleset">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REQUEST_USER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LABEL_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CAUSE_OF_REQUEST" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_Label_Saleset_Sub" Member="TBTrans_PRE_Print_Label_Saleset_Subs">
+    <Type Name="TBTrans_PRE_Print_Label_Saleset_Sub">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CHILD_ROWORDER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ROWTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BARCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="QUANTITY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PRICEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LOCATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MATKL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPONENT_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPONENT_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPONENT_BARCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPONENT_UNITCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPONENT_UNITPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="COMPONENT_QUANTITY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="COMPONENT_PRICEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MAT_SELLER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_Label_Sub" Member="TBTrans_PRE_Print_Label_Subs">
+    <Type Name="TBTrans_PRE_Print_Label_Sub">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="BARCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOCATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNITPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PRICEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STDPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MATKL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="OTH_UNIT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="OTH_UNITPRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="REMARK_FEE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TYPE_HB" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NEXT_RECEIPT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MAT_SELLER" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PROMOTION_PRICE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_Message" Member="TBTrans_PRE_Print_Messages">
+    <Type Name="TBTrans_PRE_Print_Message">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATEUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MAT_SELLER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_MessageSub" Member="TBTrans_PRE_Print_MessageSubs">
+    <Type Name="TBTrans_PRE_Print_MessageSub">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MESSAGE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="QUANTITY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRINTUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_StorageBin" Member="TBTrans_PRE_Print_StorageBins">
+    <Type Name="TBTrans_PRE_Print_StorageBin">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCTYPE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LABEL_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATEUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRINT_NUMBER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRINTUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_Check_Position_Product_Contaminated" Member="TBTrans_Check_Position_Product_Contaminateds">
+    <Type Name="TBTrans_Check_Position_Product_Contaminated">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROWORDER" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCH" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="BINCODE" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BARCODE" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="UNITCODE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="UNITNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="DATECREATE" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EMPLOYEECODE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="EMPLOYEENAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CARETAKERCODE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CARETAKERNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_Check_Price_Tag" Member="TBTrans_Check_Price_Tags">
+    <Type Name="TBTrans_Check_Price_Tag">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCH" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="DATEEDIT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DATECREATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BARCODE" Type="System.String" DbType="VarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="UNITCODE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="UNITNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="PRICETAG" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PRICESYSTEM" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="STATUSTAG" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="EMPLOYEECODE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="EMPLOYEENAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CHECKTAGCODE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CHECKTAGNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_Check_Product_Location" Member="TBTrans_Check_Product_Locations">
+    <Type Name="TBTrans_Check_Product_Location">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCH" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SITE" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BINCODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DATECREATE" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EMPLOYEECODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMPLOYEENAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CARETAKERSCODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CARETAKERSNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

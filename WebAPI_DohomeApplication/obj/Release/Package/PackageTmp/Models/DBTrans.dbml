@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBTRANS" Class="DBTransDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.0.175;Initial Catalog=DBTRANS;Persist Security Info=True;User ID=udd" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DBTRANSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBTrans_PRE_Print_Barcode" Member="TBTrans_PRE_Print_Barcodes">
+    <Type Name="TBTrans_PRE_Print_Barcode">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATEUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRINT_NUMBER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRINTUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_BarcodeSub" Member="TBTrans_PRE_Print_BarcodeSubs">
+    <Type Name="TBTrans_PRE_Print_BarcodeSub">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCTNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="BARCODE_REQ" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QUANTITY_REQ" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNIT_REQ" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UNIT_RATE_REQ" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="QUANTITY_TRAN" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNIT_TRAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CAUSE_REQUEST" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="GR_DOCNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GR_YEAR" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PRINTUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="APPROVEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVEUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="APPROVE_REMARK" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_MessageSub" Member="TBTrans_PRE_Print_MessageSubs">
+    <Type Name="TBTrans_PRE_Print_MessageSub">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROWORDER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MESSAGE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="QUANTITY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PRINTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRINTUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBTrans_PRE_Print_Message" Member="TBTrans_PRE_Print_Messages">
+    <Type Name="TBTrans_PRE_Print_Message">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOCDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATEDATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATEUSER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MAT_SELLER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

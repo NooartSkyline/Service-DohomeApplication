@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBMASTER" Class="DBMASTERDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.175;Initial Catalog=DBMASTER;Persist Security Info=True;User ID=udd" SettingsObjectName="Webservice_DohomeApplication.Properties.Settings" SettingsPropertyName="DBMASTERConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBMaster_Branch" Member="TBMaster_Branches">
+    <Type Name="TBMaster_Branch">
+      <Column Name="CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OLD_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MYNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FAX" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HOTLINE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TAXID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SHORT_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SERVER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SERVER_IP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DB_MASTER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DB_TRANS_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USER_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Sloc" Member="TBMaster_Slocs">
+    <Type Name="TBMaster_Sloc">
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SLOC" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SLOC_NAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Site" Member="TBMaster_Sites">
+    <Type Name="TBMaster_Site">
+      <Column Name="CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MYNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_User" Member="TBMaster_Users">
+    <Type Name="TBMaster_User">
+      <Column Name="CODE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MYNAME" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="FIRST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LAST_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JOBKEY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="POSITION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BEGINDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ENDDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WERKS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_User_Job_Key" Member="TBMaster_User_Job_Keys">
+    <Type Name="TBMaster_User_Job_Key">
+      <Column Name="CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MYNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="JOBKEYTYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_User_Position" Member="TBMaster_User_Positions">
+    <Type Name="TBMaster_User_Position">
+      <Column Name="CODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MYNAME" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_DHApp_Group_Detail" Member="TBMaster_DHApp_Group_Details">
+    <Type Name="TBMaster_DHApp_Group_Detail">
+      <Column Name="Site" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sloc" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Group_Code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Branch" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="TBMaster_DHApp_Group_Detail_TBMaster_DHApp_Group_Detail" Member="TBMaster_DHApp_Group_Detail2" ThisKey="Site,Sloc,Group_Code,Branch" OtherKey="Site,Sloc,Group_Code,Branch" Type="TBMaster_DHApp_Group_Detail" Cardinality="One" />
+      <Association Name="TBMaster_DHApp_Group_Detail_TBMaster_DHApp_Group_Detail" Member="TBMaster_DHApp_Group_Detail1" ThisKey="Site,Sloc,Group_Code,Branch" OtherKey="Site,Sloc,Group_Code,Branch" Type="TBMaster_DHApp_Group_Detail" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_DHApp_Group_Policy" Member="TBMaster_DHApp_Group_Policies">
+    <Type Name="TBMaster_DHApp_Group_Policy">
+      <Column Name="Group_Code" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Group_Name" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Group_Desc" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_DHApp_User" Member="TBMaster_DHApp_Users">
+    <Type Name="TBMaster_DHApp_User">
+      <Column Name="User_Code" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Group_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Barcode" Member="TBMaster_Barcodes">
+    <Type Name="TBMaster_Barcode">
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="UNITCODE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="BARCODE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Promotion_Price_DT" Member="TBMaster_Promotion_Price_DTs">
+    <Type Name="TBMaster_Promotion_Price_DT">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="POSNR" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MATNR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MATNR_TEXT" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="PROMO_QTY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNIT_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BILL_QTY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PROMO_PRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SALE_PRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="COST_AMOUNT" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DIFF_AMOUNT" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Promotion_Price_HD" Member="TBMaster_Promotion_Price_HDs">
+    <Type Name="TBMaster_Promotion_Price_HD">
+      <Column Name="DOCNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOCNO_TEXT" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="PICKUP_POINT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VALID_FROM" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VALID_TO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="REQUESTER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REQUESTER_NAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OPER_POS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="OPER_BACKOFFICE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_CASH" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_CREDIT" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_LIMIT" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_GET_COUPON" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="LIMIT_NUMBER" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IS_HOT_DEAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_SUNDAY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_MONDAY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_TUESDAY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_WEDNESDAY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_THURSDAY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_FRIDAY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="IS_SATURDAY" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="QTY_PER_DAY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TIME_START" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="TIME_STOP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="IS_ONLY_MEMBER" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_TIME" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="APPROVE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVE_TIME" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="APPROVE_USER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PMTYPE" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="CLEAR_SALE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="BUY_ONE_FREE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SHOCK_SALE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Branch_Site" Member="TBMaster_Branch_Sites">
+    <Type Name="TBMaster_Branch_Site">
+      <Column Name="BRANCHCODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SITECODE" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SITENAME" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Product" Member="TBMaster_Products">
+    <Type Name="TBMaster_Product">
+      <Column Name="CODE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NAMETH" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="NAMEEN" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="NAMESEARCH" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TAXTYPE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="STOCKUNIT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MCCODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PRODUCTBRAND" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MATERIALTYPE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MAINCODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CNFLAG" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SHOWPRICEFLAG" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CRCHARGEFLAG" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="OLDCODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MTPOS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IS_BATCH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IS_SERIAL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IS_EXPIRE_DATE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Product_Unit" Member="TBMaster_Product_Units">
+    <Type Name="TBMaster_Product_Unit">
+      <Column Name="PRODUCTCODE" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UNITCODE" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UNITRATE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNITWEIGHT" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="UNIT_BUN_CODE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UNIT_OUN_CODE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UNIT_DI_CODE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UNIT_SUN_CODE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="N_WEIGHT" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="G_WEIGHT" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="WEIGHT_UNIT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="THICK" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="WIDTH" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HIGH" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNIT_OF_SIZE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VOLUME" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UNIT_OF_VOLUME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBMaster_Unit" Member="TBMaster_Units">
+    <Type Name="TBMaster_Unit">
+      <Column Name="CODE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MYNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_UPDATE_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 16.25" name="DBTRANS">
+  <DataContextMoniker Name="/DBTRANSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5eab0f86-553d-4df9-b450-2194682e3e13" absoluteBounds="0.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_Barcode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c223e201-4078-477d-8a7f-40cc46c15e20" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4fbfbc41-213b-46a9-87eb-9f9feb933702" absoluteBounds="3.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_StorageBinSub" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a295ca20-6640-4088-bec9-13ce2f6fc8c3" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0c6f31b-90d2-4e2d-b3fb-a910140d9c62" absoluteBounds="0.75, 4.75, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_BarcodeSub" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8c8bd2d-abad-4863-9c6a-68487fa65c6b" absoluteBounds="0.765, 5.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1fe15f42-c3d8-4f81-9029-0b47f51fba82" absoluteBounds="3.75, 4.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_Label" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6a8000f-2664-4942-a9a8-9571ce870076" absoluteBounds="3.765, 5.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8aa8c7b-a4f1-4809-aa14-9af527740794" absoluteBounds="6.75, 0.75, 2, 8.6937483723958326">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_Label_Auto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfb7369b-b17a-45c7-8700-1eacc93392e5" absoluteBounds="6.765, 1.21, 1.9700000000000002, 8.1337483723958321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4244ae99-87e9-459d-a602-d9c618440abc" absoluteBounds="9.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_Label_Saleset" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1719b74-96f1-4a82-a222-8a0493c00c1e" absoluteBounds="9.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="99dde039-cc55-4266-9267-3d93e3094509" absoluteBounds="9.75, 4.75, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_Label_Saleset_Sub" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9537233-3bfe-4045-8ba5-ea4d60937109" absoluteBounds="9.765, 5.21, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d6df01b-8b22-4f1e-831f-80d25681a022" absoluteBounds="0.75, 10.75, 2, 5.2323225911458309">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_Label_Sub" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e2ba6d73-9cc6-40cd-97f3-50b0c23b805f" absoluteBounds="0.765, 11.21, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c61979d-9c78-4508-a452-c991eb2080cf" absoluteBounds="3.75, 10.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d214fd24-3c0b-425b-8b6b-d27943e3f6ec" absoluteBounds="3.765, 11.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84cc5eab-8ec1-4e3d-8b4c-dcde1ad6968c" absoluteBounds="6.75, 11.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_MessageSub" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec7ba237-11c5-43d0-aa18-113d5911663a" absoluteBounds="6.765, 12.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5acbea27-60ed-47e4-aea8-9add5433e125" absoluteBounds="9.75, 11.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_PRE_Print_StorageBin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6d06fea-dfcc-43d8-a152-267470b079c6" absoluteBounds="9.765, 12.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b48004d-ddfd-4792-942d-80e5c6f6744e" absoluteBounds="12.75, 0.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_Check_Position_Product_Contaminated" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92199b31-16ba-4138-8e25-ee98db73d392" absoluteBounds="12.765, 1.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1068d304-595d-44c4-b37d-1dcdfe2f84df" absoluteBounds="12.75, 6.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_Check_Price_Tag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7416039-17e8-48e0-8533-b302fbe3906b" absoluteBounds="12.765, 7.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e59c44b-4fe2-458a-b4cc-9e72992831ab" absoluteBounds="12.75, 12.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/DBTRANSDataContext/TBTrans_Check_Product_Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1fec5b7f-7725-4f31-b543-b63fd778df0e" absoluteBounds="12.765, 13.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
